@@ -1,0 +1,14 @@
+---
+- hosts: all
+  sudo: true
+
+  roles:
+    - apache
+    - apt
+    - php5
+    - base
+
+  tasks:
+
+    - name: start Apache
+      service: name=apache2 state=running enabled=yes

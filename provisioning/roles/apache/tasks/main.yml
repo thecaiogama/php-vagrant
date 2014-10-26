@@ -1,0 +1,3 @@
+---
+  - name: install Apache
+    apt: name=apache2 state=present
